@@ -2,35 +2,36 @@ import React, {Component} from 'react';
 import {SafeAreaView, Text, TextInput, View, StatusBar, Keyboard, Button} from 'react-native';
 import styles from './src/styles';
 import ConvertIP from './src/component/ConvertIPs'
+import About from './src/component/About'
 
 export default class App extends Component {
   constructor(props){
     super(props);
     this.state = {
       hexIP: '',
-      // view: ['calc', 'about'],
+      view: ['calc', 'about'],
       activeView: 'calc'
     };
 
     this.disKeyboard = this.disKeyboard.bind(this);
-    // this.changeView = this.changeView.bind(this);
+    this.changeView = this.changeView.bind(this);
   }
   disKeyboard(){
     Keyboard.dismiss();
   }
 
-  // changeView(){
-  //   console.log('CHange view!')
-  //   if (this.state.activeView == 'calc'){
-  //     this.setState = {
-  //       activeView: 'about'
-  //     }
-  //   } else {
-  //     this.setState = {
-  //       activeView: 'calc'
-  //     }
-  //   }
-  // }
+  changeView(){
+    console.log('CHange view!')
+    if (this.state.activeView == 'calc'){
+      this.setState({
+        activeView: 'about'
+      })
+    } else {
+      this.setState({
+        activeView: 'calc'
+      })
+    }
+  }
 
   render() {
     return (
@@ -52,11 +53,11 @@ export default class App extends Component {
               />
             </View>
       }
-      {/* {this.state.activeView == 'about' && <Text>About</Text>}
+      {this.state.activeView == 'about' && <About />}
       <Button
       onPress={this.changeView}
       title='About'
-      /> */}
+      />
       </SafeAreaView>
     );
   }

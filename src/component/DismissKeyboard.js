@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Keyboard, Button} from 'react-native';
-import styles from './src/styles';
+import styles from '../styles';
 
 export default class DismissKeyboard extends Component{
     constructor(props){
