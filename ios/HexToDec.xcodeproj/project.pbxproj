@@ -1230,6 +1230,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.KurzGedanke.HexToDec;
 				PRODUCT_NAME = HexToDec;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1249,6 +1250,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.KurzGedanke.HexToDec;
 				PRODUCT_NAME = HexToDec;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
