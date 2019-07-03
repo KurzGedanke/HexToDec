@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "DecimalIP-tvOS.app"
-               BlueprintName = "DecimalIP-tvOS"
-               ReferencedContainer = "container:DecimalIP.xcodeproj">
+               BuildableName = "HexToDec-tvOS.app"
+               BlueprintName = "HexToDec-tvOS"
+               ReferencedContainer = "container:HexToDec.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "DecimalIP-tvOSTests.xctest"
-               BlueprintName = "DecimalIP-tvOSTests"
-               ReferencedContainer = "container:DecimalIP.xcodeproj">
+               BuildableName = "HexToDec-tvOSTests.xctest"
+               BlueprintName = "HexToDec-tvOSTests"
+               ReferencedContainer = "container:HexToDec.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "DecimalIP-tvOSTests.xctest"
-               BlueprintName = "DecimalIP-tvOSTests"
-               ReferencedContainer = "container:DecimalIP.xcodeproj">
+               BuildableName = "HexToDec-tvOSTests.xctest"
+               BlueprintName = "HexToDec-tvOSTests"
+               ReferencedContainer = "container:HexToDec.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "DecimalIP-tvOS.app"
-            BlueprintName = "DecimalIP-tvOS"
-            ReferencedContainer = "container:DecimalIP.xcodeproj">
+            BuildableName = "HexToDec-tvOS.app"
+            BlueprintName = "HexToDec-tvOS"
+            ReferencedContainer = "container:HexToDec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "DecimalIP-tvOS.app"
-            BlueprintName = "DecimalIP-tvOS"
-            ReferencedContainer = "container:DecimalIP.xcodeproj">
+            BuildableName = "HexToDec-tvOS.app"
+            BlueprintName = "HexToDec-tvOS"
+            ReferencedContainer = "container:HexToDec.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "DecimalIP-tvOS.app"
-            BlueprintName = "DecimalIP-tvOS"
-            ReferencedContainer = "container:DecimalIP.xcodeproj">
+            BuildableName = "HexToDec-tvOS.app"
+            BlueprintName = "HexToDec-tvOS"
+            ReferencedContainer = "container:HexToDec.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

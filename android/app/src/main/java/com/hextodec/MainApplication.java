@@ -1,4 +1,4 @@
-package com.decimalip;
+package com.hextodec;
 
 import android.app.Application;
 
