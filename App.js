@@ -1,62 +1,62 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, TextInput, View} from 'react-native';
-import {toDec, splitIP} from './common/convertIPs.js'
-
-
-class ConvertIP extends React.Component{
-  constructor(props){
-    super(props);
-  }
-  render() {
-  var resu = toDec(splitIP(this.props.decIP))
-    return(
-      <View>
-        {this.props.decIP.length == 8 && <Text>{resu}</Text>}
-      </View>
-    );
-  }
-}
+import {SafeAreaView, Text, TextInput, View, StatusBar, Keyboard, Button} from 'react-native';
+import styles from './src/styles';
+import ConvertIP from './src/component/ConvertIPs'
 
 export default class App extends Component {
   constructor(props){
     super(props);
     this.state = {
       hexIP: '',
+      view: ['calc', 'about'],
+      activeView: 'calc'
     };
+
+    this.disKeyboard = this.disKeyboard.bind(this);
+    this.changeView = this.changeView.bind(this);
   }
-  
+  disKeyboard(){
+    Keyboard.dismiss();
+  }
+
+  changeView(){
+    console.log('CHange view!')
+    if (this.state.activeView == 'calc'){
+      this.setState = {
+        activeView: 'about'
+      }
+    } else {
+      this.setState = {
+        activeView: 'calc'
+      }
+    }
+  }
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to Decimal IP!</Text>
-        <Text>This app lets you convert a HEX IP to a Decimal IP.</Text>
-        <TextInput
-          style={styles.instructions}
-          placeholder="Input HEX IP"
-          onChangeText={(hexIP) => this.setState({hexIP})}
-        />
-        <ConvertIP decIP={this.state.hexIP} />
-      </View>
+      <SafeAreaView style={{flex: 1, backgroundColor: '#F5FCFF'}}>
+          <StatusBar backgroundColor="blue" barStyle="dark-content" />
+          {this.state.activeView == 'calc' && 
+            <View style={styles.container}>
+              <Text style={styles.welcome}>Welcome to Decimal IP!</Text>
+              <Text>Enter a hexa decimal ip to convert it to a decimal ip</Text>
+              <TextInput
+              style={styles.input}
+              placeholder="Input HEX IP e.g 7F000001"
+              onChangeText={(hexIP) => this.setState({hexIP})}
+              />
+              <ConvertIP decIP={this.state.hexIP} />
+              <Button 
+                onPress={this.disKeyboard}
+                title='Dismiss keyboard'
+              />
+            </View>
+      }
+      {this.state.activeView == 'about' && <Text>About</Text>}
+      <Button
+      onPress={this.changeView}
+      title='About'
+      />
+      </SafeAreaView>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-    marginTop: 20,
-  },
-});
