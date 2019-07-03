@@ -18,6 +18,10 @@ const styles = StyleSheet.create({
       marginBottom: 5,
       marginTop: 20,
     },
+    text: {
+      fontSize: 20,
+      margin: 10,
+    },
     results: {
         textAlign: 'center',
         color: 'red',

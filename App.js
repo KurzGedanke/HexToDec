@@ -39,8 +39,8 @@ export default class App extends Component {
           <StatusBar backgroundColor="blue" barStyle="dark-content" />
           {this.state.activeView == 'calc' && 
             <View style={styles.container}>
-              <Text style={styles.welcome}>Welcome to Decimal IP!</Text>
-              <Text>Enter a hexa decimal ip to convert it to a decimal ip</Text>
+              <Text style={styles.welcome}>Welcome to HexToDec</Text>
+              <Text style={styles.text}>Please enter a hexadecimal IP to convert it into a decimal IP.</Text>
               <TextInput
               style={styles.input}
               placeholder="Input HEX IP e.g 7F000001"
@@ -49,7 +49,7 @@ export default class App extends Component {
               <ConvertIP decIP={this.state.hexIP} />
               <Button 
                 onPress={this.disKeyboard}
-                title='Dismiss keyboard'
+                title='dismiss keyboard'
               />
             </View>
       }
