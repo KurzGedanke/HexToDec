@@ -289,10 +289,12 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = SNX8K8E2UK;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = SNX8K8E2UK;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -586,6 +588,7 @@
 			baseConfigurationReference = AD8C0C3C0F372ED5D7D43F3E /* Pods-HexToDecTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SNX8K8E2UK;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -610,6 +613,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = SNX8K8E2UK;
 				INFOPLIST_FILE = HexToDecTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -629,6 +633,8 @@
 			baseConfigurationReference = D8F1107DB6C2B992E0286BB1 /* Pods-HexToDec.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = SNX8K8E2UK;
@@ -641,6 +647,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.KurzGedanke.HexToDec;
 				PRODUCT_NAME = HexToDec;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -650,6 +657,8 @@
 			baseConfigurationReference = B479279715AFD5D3B262E05E /* Pods-HexToDec.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SNX8K8E2UK;
 				INFOPLIST_FILE = HexToDec/Info.plist;
@@ -661,6 +670,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.KurzGedanke.HexToDec;
 				PRODUCT_NAME = HexToDec;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
