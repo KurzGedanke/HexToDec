@@ -34,6 +34,26 @@ And run the app
 
 ![v1](https://raw.githubusercontent.com/KurzGedanke/HexToDec/master/design/Screenshots/iPhoneXs_Max/v1/Simulator%20Screen%20Shot%20-%20iPhone%20Xs%20Max%20-%202019-07-03%20at%2022.48.09.png)
 
+## Colors
+
+### Light
+
+| Color 	| Value 	|
+|-------	|---------	|
+| White 	| #F2F2F7 	|
+| Grey  	| #AEAEB2 	|
+| Blue  	| #007AFF 	|
+| Red   	| #FF2D55 	|
+
+### Dark
+
+| Color 	| Value 	|
+|-------	|---------	|
+| White 	| #1C1C1E 	|
+| Grey  	| #636366 	|
+| Blue  	| #0A84FF 	|
+| Red   	| #FF375F 	|
+
 ## Resources
 
 ## Code of Conduct
