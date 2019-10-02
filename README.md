@@ -4,7 +4,7 @@
 [![Say Thanks!](https://img.shields.io/badge/Donate-💵-purple.svg)](https://blog.kurzgedanke.me/donate/)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-🐿️-lightgrey.svg)](https://saythanks.io/to/KurzGedanke)
 ![node](https://img.shields.io/badge/node-10.0.0-orange.svg)
-![React](https://img.shields.io/badge/React%20Native-0.60-orange.svg)
+![React](https://img.shields.io/badge/React%20Native-0.61-orange.svg)
 
 Welcome to HexToDec.
 
@@ -26,6 +26,11 @@ Install the depedencies
 
 `npm install`
 
+`cd ios/`
+
+`pod install`
+
+`cd ..`
 And run the app
 
 `react-native run-ios`
